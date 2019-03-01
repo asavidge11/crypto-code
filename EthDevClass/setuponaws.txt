@@ -1,0 +1,46 @@
+sudo apt-get update
+sudo apt-get install apache2
+//allow ports
+sudo ufw allow 'Apache Full'
+/get status
+sudo ufw status
+//start
+sudo systemctl status apache2
+
+cd  /var/www/html/
+
+sudo apt-get install npm
+sudo npm install -g npm
+
+cd project dir
+
+create sudo user amy
+sudo amy
+create node_modules dir
+chmod on kickstart dir -R 777
+sudo npm init
+
+sudo npm install fs-extra@7.0.1
+sudo npm install ganache-cli@6.2.5
+sudo npm install mocha@5.2.0
+sudo npm install next@4.1.4
+sudo npm install next-routes@1.4.2
+sudo npm install react@16.7.0
+sudo npm install react-dom@16.7.0
+sudo npm install semantic-ui-css@2.4.1
+sudo npm install semantic-ui-react@0.84.0
+sudo npm install solc@0.4.17
+sudo npm install truffle-hdwallet-provider@1.0.2
+sudo npm install -g web3@1.0.0-beta.35 --unsafe-perm=true --allow-root --save
+sudo npm install scrypt  --unsafe-perm=true --allow-root --save
+
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+
+
+install chrome
+https://linoxide.com/linux-how-to/install-latest-chrome-run-terminal-ubuntu/
+
+google-chrome &
+
+don't forget that if you redeploy - the  contract address needs to change in the factory
+you are using  rinkeby, infura node  
